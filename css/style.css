@@ -223,13 +223,13 @@
 /*========= End Site Services =========*/
 
 /*========= Site About Us =========*/
-.site__about-us {
+.section-no-bg {
 	margin-top: 3rem;
 	margin-bottom: 3rem;
 }
 
 @media only screen and (min-width: 576px) {
-	.site__about-us {
+	.section-no-bg {
 		margin-top: 6rem;
 		margin-bottom: 6rem;
 	}
@@ -246,13 +246,12 @@
 	}
 }
 
-.site__about-us .introduction {
+.section-no-bg .title {
 	flex-direction: column;
 }
 
-.site__about-us .introduction h2 {
+.section-no-bg .title h2 {
 	margin-top: 1rem;
-	font-weight: 300;
 	text-transform: uppercase;
 	letter-spacing: 4px;
 }
@@ -336,6 +335,88 @@
 	background-color: #ff73006c;
 }
 /*========= End Site Technologies =========*/
+
+/*========= Site Partners =========*/
+.site__partners > div {
+	padding: 0 4rem;
+}
+
+@media only screen and (min-width: 576px) {
+	.site__partners > div {
+		padding: 0;
+	}
+}
+
+.site__partners .row.title {
+	flex-direction: column;
+}
+
+.site__partners .item {
+	padding: 2rem;
+	margin: 0 1rem;
+}
+
+.site__partners .owl-carousel .owl-stage {
+	display: flex;
+}
+
+.site__partners .owl-carousel .owl-item .item {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.site__partners .testimonials {
+	margin-top: 4rem;
+}
+
+.site__partners .testimonials .owl-item img {
+	width: auto;
+}
+
+.site__partners .owl-nav {
+	display: none;
+}
+
+.site__partners .testimonials button {
+	padding: 1rem 1.5rem;
+	margin-right: 1rem;
+	margin-top: 1rem;
+	background-color: #fff;
+	border-radius: 0.5rem;
+	cursor: pointer;
+}
+
+.site__partners .testimonials button:hover {
+	background: #ff8002; /* Old browsers */
+	background: -moz-linear-gradient(45deg, #ff8002 0%, #ff4001 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(
+		45deg,
+		#ff8002 0%,
+		#ff4001 100%
+	); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(
+		45deg,
+		#ff8002 0%,
+		#ff4001 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8002', endColorstr='#ff4001',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.site__partners .testimonials button:hover i {
+	color: white;
+}
+
+.site__partners .testimonials button i {
+	color: rgb(65, 65, 65);
+	font-weight: 200;
+}
+
+.site__partners .quote-icon {
+	margin-bottom: 1rem;
+}
+/*========= End Site Partners =========*/
 html,
 body {
 	font-family: 400 1rem Montserrat, sans-serif;
