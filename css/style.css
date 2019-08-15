@@ -257,6 +257,85 @@
 	letter-spacing: 4px;
 }
 /*========= End Site About Us =========*/
+
+/*========= Site Technologies =========*/
+.section-bg {
+	padding: 2rem 0;
+}
+
+@media only screen and (min-width: 576px) {
+	.section-bg {
+		padding: 4rem;
+	}
+}
+
+.section-bg h2 {
+	font-weight: 600;
+	color: white;
+	text-align: center;
+	font-size: 2rem;
+}
+
+@media only screen and (min-width: 576px) {
+	.section-bg h2 {
+		font-size: 3rem;
+	}
+}
+
+.site__technologies {
+	background-image: url('../images/10-tech-image.png');
+}
+
+.site__technologies img {
+	max-height: 4rem;
+}
+
+@media only screen and (min-width: 576px) {
+	.site__technologies img {
+		max-height: 6rem;
+	}
+}
+
+.site__technologies h3 {
+	color: white;
+	margin-top: 0.5rem;
+	font-size: 1rem;
+}
+
+@media only screen and (min-width: 576px) {
+	.site__technologies h3 {
+		color: white;
+		margin-top: 0.5rem;
+		font-size: 1.75rem;
+	}
+}
+
+.site__technologies > div {
+	width: 80%;
+	margin: auto;
+}
+
+.site__technologies .tech-item {
+	text-align: center;
+	padding: 1rem;
+}
+
+.site__technologies .tech-item div {
+	border: 0.5px solid rgba(255, 255, 255, 0.25);
+	border-radius: 2rem;
+	padding: 1rem;
+}
+
+@media only screen and (min-width: 576px) {
+	.site__technologies .tech-item div {
+		padding: 2rem;
+	}
+}
+
+.site__technologies .tech-item div:hover {
+	background-color: #ff73006c;
+}
+/*========= End Site Technologies =========*/
 html,
 body {
 	font-family: 400 1rem Montserrat, sans-serif;
