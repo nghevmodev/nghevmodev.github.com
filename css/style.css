@@ -54,11 +54,13 @@
 .site__hero-img {
 	margin-top: 108px;
 }
+
 @media only screen and (max-width: 600px) {
 	.site__hero-img {
 		margin-top: 90px;
 	}
 }
+
 .site__hero-img .carousel-caption {
 	position: absolute;
 	top: 0;
@@ -70,14 +72,17 @@
 	justify-content: flex-end;
 	padding: 0;
 }
+
 .site__hero-img .carousel-item img {
 	max-height: 800px;
 }
+
 .site__hero-img .slogan {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
+
 .site__hero-img .slogan p {
 	font-family: 'Montserrat', sans-serif;
 	text-align: left;
@@ -85,6 +90,7 @@
 	font-weight: 600;
 	margin-bottom: 0;
 }
+
 .site__hero-img .slogan p:last-child {
 	margin-top: 1.5rem;
 	font-size: 2rem;
@@ -104,6 +110,7 @@
 	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8002', endColorstr='#ff4001',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
+
 @media only screen and (max-width: 600px) {
 	.site__hero-img .slogan p,
 	.site__hero-img .slogan p:last-child {
@@ -115,6 +122,110 @@
 	}
 }
 /*========= End Site Hero Img =========*/
+
+/*========= Site Services =========*/
+.site__services {
+	position: relative;
+}
+
+.site__services > .row {
+	width: 100%;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	display: flex;
+	text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+	.site__services > .row {
+		margin-top: -4rem;
+		-webkit-box-shadow: 1px 1px 10px 0px rgba(50, 50, 50, 0.75);
+		-moz-box-shadow: 1px 1px 10px 0px rgba(50, 50, 50, 0.75);
+		box-shadow: 1px 1px 10px 0px rgba(50, 50, 50, 0.75);
+		border-radius: 2.5rem;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.site__services > .row {
+		width: 80%;
+		padding: 3rem;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.site__services > .row {
+		width: 70%;
+	}
+}
+
+.site__services p {
+	font-size: 0.8rem;
+	color: rgba(65, 65, 65, 0.75);
+	margin-bottom: 0;
+}
+
+.site__services .item {
+	display: flex;
+	flex-direction: column;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.site__services .item > div:first-child {
+	height: 5rem;
+}
+
+@media only screen and (min-width: 768px) {
+	.site__services .item > div:first-child {
+		height: 4rem;
+	}
+}
+
+.site__services .circle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 0.5rem;
+	padding-bottom: 1rem;
+}
+
+@media only screen and (min-width: 992px) {
+	.site__services .circle {
+		padding-top: 2rem;
+		padding-bottom: 3rem;
+	}
+	.site__services .circle::before,
+	.site__services .circle::after {
+		display: inline-block;
+		content: '';
+		border-top: 0.1rem solid rgba(204, 204, 204, 0.75);
+		width: 100%;
+	}
+
+	.site__services .item:first-child .circle::before,
+	.site__services .item:last-child .circle::after {
+		border: none;
+	}
+}
+.site__services h4 {
+	font-weight: bold;
+}
+
+.site__services p {
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+/*========= End Site Services =========*/
+
+/*========= Site About Us =========*/
+.site__about-us {
+	margin-top: 6rem;
+}
+/*========= End Site About Us =========*/
 html,
 body {
 	font-family: 400 1rem Montserrat, sans-serif;
