@@ -673,8 +673,101 @@
 		background-color: #f3fbfe;
 	}
 }
-
 /*========= End Site News =========*/
+
+/*========= Site Footer =========*/
+.site__footer {
+	background-color: #091b29;
+	color: white;
+}
+
+.site__footer .social {
+	padding: 3rem 0 0 0;
+	justify-content: space-between;
+	margin-top: -1rem;
+}
+
+.site__footer .social > div {
+	margin-top: 1rem;
+}
+
+.site__footer .social-link > div {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+	background-color: #234663;
+	cursor: pointer;
+	margin-right: 0.5rem;
+}
+
+.site__footer .social-link a {
+	color: #92a3b4;
+	text-decoration: none;
+}
+
+.site__footer .social-link > div:hover {
+	background-color: #ff7200;
+}
+
+.site__footer .social-link > div:hover a {
+	color: white;
+}
+
+.site__footer hr {
+	border-top: 0.5px solid #92a3b4b0;
+	margin: 2rem 0;
+}
+
+.site__footer .contact {
+	margin-bottom: 1rem;
+}
+
+.site__footer .contact ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.site__footer .contact li {
+	font-size: 0.8rem;
+	margin-bottom: 0.8rem;
+	color: #92a3b4;
+}
+
+.site__footer .contact a {
+	text-decoration: none;
+	color: #92a3b4;
+}
+
+.site__footer .contact a:hover {
+	color: white;
+}
+.site__footer > div:nth-child(2) {
+	background-color: black;
+}
+
+.site__footer .copyright {
+	justify-content: space-between;
+	padding: 1rem 0;
+	font-size: 0.8rem;
+	color: #92a3b4;
+}
+
+.site__footer .copyright a {
+	text-decoration: none;
+	color: #92a3b4;
+}
+
+.site__footer .copyright span:first-child {
+	margin-right: 1rem;
+}
+
+.site__footer .copyright span:hover a {
+	color: white;
+}
+/*========= End Site Footer =========*/
 html,
 body {
 	font-family: Montserrat, sans-serif;
