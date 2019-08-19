@@ -48,7 +48,7 @@
         <!-- Site Header-->
         <div class="site__header fixed-top">
             <div class="container">
-                <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+                <nav id="navbar" class="navbar navbar-expand-lg navbar-light wow animated fadeInUp">
                     <a href="#home" class="navbar-brand">
                         <img
                             class="navbar-logo"
@@ -91,35 +91,30 @@
                                 <div class="hightlight"></div>
                             </li>
                             <li>
+                                    <a class="nav-item nav-link" href="#partners"
+                                        >Partners</a
+                                    >
+                                    <div class="hightlight"></div>
+                                </li>
+                            <li>
                                 <a class="nav-item nav-link" href="#case-study"
                                     >Case Study</a
                                 >
                                 <div class="hightlight"></div>
                             </li>
                             <li>
-                                <a class="nav-item nav-link" href="#partners"
-                                    >Partners</a
-                                >
-                                <div class="hightlight"></div>
-                            </li>
+                                    <a class="nav-item nav-link" href="#contact"
+                                        >Contact</a
+                                    >
+                                    <div class="hightlight"></div>
+                                </li>
                             <li>
                                 <a class="nav-item nav-link" href="#news"
                                     >News</a
                                 >
                                 <div class="hightlight"></div>
                             </li>
-                            <li>
-                                <a class="nav-item nav-link" href="#career"
-                                    >Career</a
-                                >
-                                <div class="hightlight"></div>
-                            </li>
-                            <li>
-                                <a class="nav-item nav-link" href="#contact"
-                                    >Contact</a
-                                >
-                                <div class="hightlight"></div>
-                            </li>
+                            
                         </ul>
                     </div>
                 </nav>
@@ -131,7 +126,8 @@
         <div
             class="site__hero-img carousel slide"
             data-ride="carousel"
-            data-interval="false"
+            data-interval="3000"
+            data-keyboard="false"
         >
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -141,7 +137,7 @@
                         alt="first slide"
                     />
                     <div
-                        class="carousel-caption wow animated fadeInRight slow container-fluid"
+                        class="carousel-caption container-fluid"
                     >
                         <div class="row no-gutters w-100">
                             <div class="col-12 col-sm-5 offset-sm-2 slogan">
@@ -161,12 +157,66 @@
                         </div>
                     </div>
                 </div>
+                <div class="carousel-item">
+                        <img
+                            class="d-block w-100"
+                            src="./images/2-slide-bg.png"
+                            alt="first slide"
+                        />
+                        <div
+                            class="carousel-caption container-fluid"
+                        >
+                            <div class="row no-gutters w-100">
+                                <div class="col-12 col-sm-5 offset-sm-2 slogan">
+                                    <div>
+                                        <p>Solve Business</p>
+                                        <p>Challenges with</p>
+                                        <p>INNOVATIVE TECHNOLOGIES</p>
+                                    </div>
+                                </div>
+                                <div class="col-sm-5 d-none d-sm-block">
+                                    <img
+                                        class="img-fluid"
+                                        src="./images/3-slide-image-2.png"
+                                        alt="slide-img"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                            <img
+                                class="d-block w-100"
+                                src="./images/2-slide-bg.png"
+                                alt="first slide"
+                            />
+                            <div
+                                class="carousel-caption container-fluid"
+                            >
+                                <div class="row no-gutters w-100">
+                                    <div class="col-12 col-sm-5 offset-sm-2 slogan">
+                                        <div>
+                                            <p>Solve Business</p>
+                                            <p>Challenges with</p>
+                                            <p>INNOVATIVE TECHNOLOGIES</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-5 d-none d-sm-block">
+                                        <img
+                                            class="img-fluid"
+                                            src="./images/3-slide-image-3.png"
+                                            alt="slide-img"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
             </div>
         </div>
         <!-- End Site Hero Img-->
 
         <!-- Site Services -->
-        <div class="site__services" id="services">
+        <div class="site__services wow animated fadeInUp" id="services">
             <div class="row no-gutters">
                 <div class="col-6 col-md-3 item">
                     <div>
@@ -245,16 +295,16 @@
         <!-- End Site Services -->
 
         <!-- Site About Us -->
-        <div class="site__about-us section-no-bg" id="about-us">
+        <div id="about-us" class="site__about-us section-no-bg">
             <div class="row">
-                <div class="col-sm-6 order-1 order-sm-0">
+                <div class="col-sm-6 order-1 order-sm-0 wow animated fadeInLeft">
                     <img
                         class="img-fluid"
                         src="./images/9-about-us-image.png"
                         alt="About us"
                     />
                 </div>
-                <div class="col-sm-5 order-0 order-sm-1">
+                <div class="col-sm-5 order-0 order-sm-1 wow animated fadeInRight">
                     <div class="row title">
                         <div class="col-sm-1">
                             <img
@@ -296,9 +346,9 @@
         <!-- End Site About Us -->
 
         <!-- Site Technologies -->
-        <div class="site__technologies section-bg" id="#technologies">
-            <h2>Technologies</h2>
-            <div class="row tech-row">
+        <div class="site__technologies section-bg">
+            <h2 class="wow animated fadeInUp">Technologies</h2>
+            <div class="row tech-row wow animated fadeInUp">
                 <div class="col-4 col-sm-3 tech-item">
                     <div>
                         <img src="./images/11-icon-java.png" /><br />
@@ -354,7 +404,7 @@
         <!-- Site Partners -->
         <div id="partners" class="site__partners section-no-bg">
             <div class="container">
-                <div class="row title">
+                <div class="row title wow animated fadeInLeft">
                     <div class="col-sm-1">
                         <img
                             class="cicle-icon"
@@ -363,7 +413,7 @@
                     </div>
                     <h2 class="col-sm-5">Our Partners</h2>
                 </div>
-                <div class="partner-list owl-carousel owl-theme">
+                <div class="partner-list owl-carousel owl-theme wow animated fadeInLeft">
                     <div class="item">
                         <img
                             class="client-logo"
@@ -413,7 +463,7 @@
                         />
                     </div>
                 </div>
-                <div class="testimonials owl-carousel owl-theme">
+                <div class="testimonials owl-carousel owl-theme wow animated fadeInUp">
                     <div class="row">
                         <div class="col-sm-6">
                             <img
@@ -531,9 +581,9 @@
         <!-- End Site Partners -->
 
         <!-- Site Case Study -->
-        <div class="site__case-study section-bg" id="#case-study">
-            <h2>Case Study</h2>
-            <div class="mx-auto">
+        <div id="case-study" class="site__case-study section-bg">
+            <h2 class="wow animated fadeInUp">Case Study</h2>
+            <div class="mx-auto wow animated fadeInUp">
                 <div class="row container btns mx-auto">
                     <button data-filter="*">All Works</button>
                     <button data-filter=".website">Websites (10)</button>
@@ -599,7 +649,7 @@
         <!-- End Site Case Study -->
 
         <!-- Site Stats -->
-        <div class="site__stats container">
+        <div class="site__stats container wow animated fadeInUp">
             <div class="row">
                 <div class="col-12 col-sm-4 item">
                     <div>
@@ -747,9 +797,9 @@
         <!-- End Site Stats -->
 
         <!-- Site Form -->
-        <div class="site__form container section-no-bg">
+        <div id="contact" class="site__form container section-no-bg">
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6 wow animated fadeInLeft">
                         <div class="row title">
                                 <div class="col-sm-1">
                                     <img
@@ -809,7 +859,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 wow animated fadeInRight">
                     <img
                         class="img-fluid"
                         src="./images/22-contact-image.png"
@@ -820,10 +870,10 @@
         <!-- End Site Form -->
 
         <!-- Site News -->
-        <div class="site__news section-bg" id="#news">
-            <h2>News Feeds</h2>
+        <div id="news" class="site__news section-bg" id="#news">
+            <h2 class="wow animated fadeInUp">News Feeds</h2>
             <div class="row mx-auto justify-content-center">
-                <div class="col-12 col-sm-4 col-md-3 item">
+                <div class="col-12 col-sm-4 col-md-3 item wow animated fadeInLeft">
                     <div>
                         <img class="img-fluid" src="./images/news.jpg" alt="" />
                     </div>
@@ -853,7 +903,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-4 col-md-3 item">
+                <div class="col-12 col-sm-4 col-md-3 item wow animated fadeInUp">
                     <div>
                         <img class="img-fluid" src="./images/news.jpg" alt="" />
                     </div>
@@ -883,7 +933,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-4 col-md-3 item">
+                <div class="col-12 col-sm-4 col-md-3 item wow animated fadeInRight">
                     <div>
                         <img class="img-fluid" src="./images/news.jpg" alt="" />
                     </div>
@@ -920,7 +970,7 @@
 
         <!-- Site Footer -->
         <div class="site__footer">
-            <footer class="container">
+            <footer class="container wow animated fadeInUp">
                 <div class="row social">
                     <div class="">
                         <img class="footer-logo" src="./images/1-logo-dark-bg.png" alt="logo footer" />
