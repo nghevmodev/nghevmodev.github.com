@@ -597,10 +597,18 @@
 /*========= Site News =========*/
 .site__news {
 	background-image: url('../images/10-tech-image.png');
+	max-height: 1000px;
 }
 
-.site__news > div {
+@media only screen and (min-width: 576px) {
+	.site__news {
+		max-height: 450px;
+	}
+}
+
+.site__news > div:nth-child(2) {
 	margin-top: -1rem;
+	z-index: 50;
 }
 
 .site__news .item {
@@ -653,6 +661,19 @@
 .site__news .footer > div:nth-child(2) i:hover {
 	color: #ff7200;
 }
+
+.site__news ~ .after-bg {
+	height: 40rem;
+	background-color: #f3fbfe;
+}
+
+@media only screen and (min-width: 576px) {
+	.site__news ~ .after-bg {
+		height: 15rem;
+		background-color: #f3fbfe;
+	}
+}
+
 /*========= End Site News =========*/
 html,
 body {
