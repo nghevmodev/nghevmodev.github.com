@@ -543,7 +543,13 @@
 
 /*========= Site Stats =========*/
 .site__stats {
-	margin-bottom: 4rem;
+	margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 576px) {
+	.site__stats {
+		margin-bottom: 4rem;
+	}
 }
 
 .site__stats .row {
@@ -594,6 +600,18 @@
 }
 /*========= End Site Stats =========*/
 
+/*========= Site Form =========*/
+.site__form button {
+	background-color: #ff7200;
+	border: none;
+	padding: 0.5rem 1rem;
+}
+
+.site__form button:hover {
+	background-color: #975722;
+}
+/*========= End Site Form =========*/
+
 /*========= Site News =========*/
 .site__news {
 	background-image: url('../images/10-tech-image.png');
@@ -616,7 +634,7 @@
 }
 
 .site__news .item > div:nth-child(2) {
-	border: 1px solid #b3b3b327;
+	border: 1px solid #6d6d6d27;
 	border-top: none;
 	background-color: white;
 	padding: 1.5rem;

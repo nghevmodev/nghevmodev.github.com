@@ -249,7 +249,7 @@
             <div class="row">
                 <div class="col-sm-6 order-1 order-sm-0">
                     <img
-                        class="img-fluid slideanim"
+                        class="img-fluid"
                         src="./images/9-about-us-image.png"
                         alt="About us"
                     />
@@ -734,21 +734,21 @@
         </div>
         <!-- End Site Stats -->
 
-        <!-- Container (Contact Section) -->
-        <div id="contact" class="container-fluid bg-grey contact-container">
-            <div class="row slideanim">
+        <!-- Site Form -->
+        <div class="site__form container section-no-bg">
+            <div class="row">
                 <div class="col-sm-6">
-                    <div class="row">
-                        <div class="col-sm-1 offset-2">
-                            <img
-                                class="cicle-icon"
-                                src="./images/8-icon-circle.png"
-                            />
-                        </div>
-                        <h2 class="col-sm-3">Contact Us</h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4 offset-2 form-group">
+                        <div class="row title">
+                                <div class="col-sm-1">
+                                    <img
+                                        class="cicle-icon"
+                                        src="./images/8-icon-circle.png"
+                                    />
+                                </div>
+                                <h2 class="col-sm-5">Contact Us</h2>
+                            </div>
+                    <div class="row justify-content-between">
+                        <div class="col-sm-5 form-group">
                             <label>Your Name</label>
                             <input
                                 class="form-control"
@@ -771,8 +771,8 @@
                             />
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-sm-10 offset-2 form-group">
+                    <div class="row mb-2">
+                        <div class="col-12 form-group">
                             <label>Message</label>
                             <textarea
                                 class=" form-control"
@@ -785,17 +785,19 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-12 form-group">
+                        <div class="form-group col-12 d-flex justify-content-start">
                             <button
-                                class="btn btn-primary pull-right"
+                                class="btn btn-primary"
                                 type="submit"
                             >
-                                Send
+                                Send Message
+                                &nbsp;
+                                <i class="fa fa-paper-plane"></i>
                             </button>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 slideanim">
+                <div class="col-sm-6">
                     <img
                         class="img-fluid"
                         src="./images/22-contact-image.png"
@@ -803,6 +805,7 @@
                 </div>
             </div>
         </div>
+        <!-- End Site Form -->
 
         <!-- Site News -->
         <div class="site__news section-bg" id="#news">
