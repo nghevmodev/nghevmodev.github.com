@@ -70,7 +70,9 @@ $(document).ready(function() {
 		delay: 10,
 		time: 1000
 	}); // End Init Counter Up
+});
 
+$(window).load(function() {
 	// Filter Case Study
 	var $items = $('.site__case-study .items');
 	$items.isotope({

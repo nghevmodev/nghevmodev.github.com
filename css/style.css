@@ -75,8 +75,18 @@
 	padding: 0;
 }
 
+.site__hero-img .carousel-caption > .row {
+	margin-top: -100px;
+}
+
 .site__hero-img .carousel-item img {
 	max-height: 800px;
+}
+
+@media only screen and (min-width: 1920px) {
+	.site__hero-img .carousel-item img {
+		max-height: 1400px;
+	}
 }
 
 .site__hero-img .slogan {
@@ -144,7 +154,7 @@
 
 @media only screen and (min-width: 768px) {
 	.site__services > .row {
-		margin-top: -4rem;
+		margin-top: -8rem;
 		-webkit-box-shadow: 1px 4px 19px 0px rgba(50, 50, 50, 0.1);
 		-moz-box-shadow: 1px 4px 19px 0px rgba(50, 50, 50, 0.1);
 		box-shadow: 1px 4px 19px 0px rgba(50, 50, 50, 0.1);
@@ -249,13 +259,29 @@
 }
 
 .section-no-bg .title {
-	flex-direction: column;
+	display: flex;
+	margin-bottom: 1rem;
+	align-items: center;
+	margin-bottom: 1rem;
 }
 
-.section-no-bg .title h2 {
-	margin-top: 1rem;
+.section-no-bg .title div {
+	display: inline-block;
+}
+
+.section-no-bg .title div {
+	margin: 0;
+	font-size: 1rem;
 	text-transform: uppercase;
-	letter-spacing: 4px;
+	letter-spacing: 2px;
+	font-weight: bold;
+}
+
+.section-no-bg .title img {
+	margin-right: 1rem;
+}
+.site__about-us p {
+	font-size: 0.8rem;
 }
 /*========= End Site About Us =========*/
 
@@ -266,7 +292,7 @@
 
 @media only screen and (min-width: 576px) {
 	.section-bg {
-		padding: 4rem;
+		padding: 6rem 4rem;
 	}
 }
 
@@ -323,16 +349,16 @@
 
 .site__technologies .tech-item div {
 	cursor: pointer;
+	border-radius: 0.5rem;
+	padding: 0.5rem 1rem;
 }
 
-@media only screen and (min-width: 576px) {
-	.site__technologies .tech-item div {
-		padding: 2rem;
-	}
+.site__technologies .tech-item img {
+	margin-bottom: 1rem;
 }
 
-.site__technologies .tech-item div:hover h3 {
-	color: #ff7200;
+.site__technologies .tech-item div:hover {
+	background-color: #af4f00b6;
 }
 /*========= End Site Technologies =========*/
 
@@ -345,10 +371,6 @@
 	.site__partners > div {
 		padding: 0;
 	}
-}
-
-.site__partners .row.title {
-	flex-direction: column;
 }
 
 .site__partners .item {
@@ -438,6 +460,11 @@
 
 .site__partners .quote-icon {
 	margin-bottom: 1rem;
+	max-height: 2rem;
+}
+
+.site__partners .owl-dots {
+	margin-top: 2rem;
 }
 /*========= End Site Partners =========*/
 
@@ -557,7 +584,7 @@
 
 @media only screen and (min-width: 576px) {
 	.site__stats .row {
-		margin-top: -4rem;
+		margin-top: -5.5rem;
 		-webkit-box-shadow: 1px 4px 19px 0px rgba(50, 50, 50, 0.1);
 		-moz-box-shadow: 1px 4px 19px 0px rgba(50, 50, 50, 0.1);
 		box-shadow: 1px 4px 19px 0px rgba(50, 50, 50, 0.1);
@@ -620,6 +647,16 @@
 	.site__news {
 		max-height: 450px;
 	}
+}
+
+@media only screen and (min-width: 1920px) {
+	.site__news {
+		max-height: 550px;
+	}
+}
+
+.site__news > h2 {
+	margin-bottom: 3rem;
 }
 
 .site__news > div:nth-child(2) {
@@ -685,7 +722,14 @@
 
 @media only screen and (min-width: 576px) {
 	.site__news ~ .after-bg {
-		height: 15rem;
+		height: 18rem;
+		background-color: #f3fbfe;
+	}
+}
+
+@media only screen and (min-width: 1920px) {
+	.site__news ~ .after-bg {
+		height: 20rem;
 		background-color: #f3fbfe;
 	}
 }

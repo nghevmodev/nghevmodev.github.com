@@ -43,12 +43,25 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         />
         <link rel="stylesheet" href="./css/style.css" />
+
+        <!-- JavaScript Libraries -->
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/jquery-migrate.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/wow.min.js"></script>
+        <script src="./js/waypoints.min.js"></script>
+        <script src="./js/jquery.counterup.min.js"></script>
+        <script src="./js/isotope.pkgd.min.js"></script>
+        <script src="./js/owl.carousel.min.js"></script>
+
+        <!-- Main JavaScript Files -->
+        <script src="./js/script.js"></script>
     </head>
     <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
         <!-- Site Header-->
         <div class="site__header fixed-top">
             <div class="container">
-                <nav id="navbar" class="navbar navbar-expand-lg navbar-light wow animated fadeInUp">
+                <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
                     <a href="#home" class="navbar-brand">
                         <img
                             class="navbar-logo"
@@ -126,7 +139,7 @@
         <div
             class="site__hero-img carousel slide"
             data-ride="carousel"
-            data-interval="3000"
+            data-interval="2000"
             data-keyboard="false"
         >
             <div class="carousel-inner">
@@ -305,14 +318,15 @@
                     />
                 </div>
                 <div class="col-sm-5 order-0 order-sm-1 wow animated fadeInRight">
-                    <div class="row title">
-                        <div class="col-sm-1">
+                    <div class="title">
+                      
                             <img
                                 class="cicle-icon"
                                 src="./images/8-icon-circle.png"
                             />
-                        </div>
-                        <h2 class="col-sm-5">About us</h2>
+                           
+                        
+                        <div>About us</div>
                     </div>
                     <p>
                         Established in 2012, VMODEV has become a trusted IT
@@ -349,52 +363,76 @@
         <div class="site__technologies section-bg">
             <h2 class="wow animated fadeInUp">Technologies</h2>
             <div class="row tech-row wow animated fadeInUp">
-                <div class="col-4 col-sm-3 tech-item">
+                <div class="col-6 col-sm-3 tech-item">
                     <div>
                         <img src="./images/11-icon-java.png" /><br />
                         <h3>Java</h3>
                     </div>
                 </div>
-                <div class="col-4 col-sm-3 tech-item">
+                <div class="col-6 col-sm-3 tech-item">
                     <div>
                         <img src="./images/12-icon-net.png" /><br />
                         <h3>.Net</h3>
                     </div>
                 </div>
-                <div class="col-4 col-sm-3 tech-item">
+                <div class="col-6 col-sm-3 tech-item">
                     <div>
                         <img src="./images/17-icon-ruby.png" /><br />
                         <h3>Ruby</h3>
                     </div>
                 </div>
-                <div class="col-4 col-sm-3 tech-item">
+                <div class="col-6 col-sm-3 tech-item">
                         <div>
                             <img src="./images/18-icon-node.png" /><br />
                             <h3>Node</h3>
                         </div>
                     </div>
-                <div class="col-4 col-sm-3 tech-item">
+                <div class="col-6 col-sm-3 tech-item">
+                    <div>
+                        <img src="./images/21-icon-python.png" /><br />
+                        <h3>Python</h3>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 tech-item">
+                    <div>
+                        <img src="./images/22-icon-php.png" /><br />
+                        <h3>PHP</h3>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 tech-item">
                     <div>
                         <img src="./images/14-icon-android-4.png" /><br />
                         <h3>Android</h3>
                     </div>
                 </div>
-                <div class="col-4 col-sm-3 tech-item">
+                <div class="col-6 col-sm-3 tech-item">
                     <div>
                         <img src="./images/15-icon-ios-5.png" /><br />
                         <h3>iOS</h3>
                     </div>
                 </div>
-                <div class="col-4 col-sm-3 tech-item">
+                <div class="col-6 col-sm-3 tech-item">
                     <div>
                         <img src="./images/16-icon-cloud-6.png" /><br />
                         <h3>Cloud</h3>
                     </div>
                 </div>
-                <div class="col-4 col-sm-3 tech-item">
+                <div class="col-6 col-sm-3 tech-item">
                     <div>
                         <img src="./images/19-icon-react.png" /><br />
                         <h3>React</h3>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 tech-item">
+                    <div>
+                        <img src="./images/23-icon-vue.png" /><br />
+                        <h3>Vue</h3>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-3 tech-item">
+                    <div>
+                        <img src="./images/20-icon-angular.png" /><br />
+                        <h3>Angular</h3>
                     </div>
                 </div>
             </div>
@@ -404,15 +442,16 @@
         <!-- Site Partners -->
         <div id="partners" class="site__partners section-no-bg">
             <div class="container">
-                <div class="row title wow animated fadeInLeft">
-                    <div class="col-sm-1">
-                        <img
-                            class="cicle-icon"
-                            src="./images/8-icon-circle.png"
-                        />
-                    </div>
-                    <h2 class="col-sm-5">Our Partners</h2>
-                </div>
+                <div class="title">
+                      
+                    <img
+                        class="cicle-icon"
+                        src="./images/8-icon-circle.png"
+                    />
+                   
+                
+                <div>Partners</div>
+            </div>
                 <div class="partner-list owl-carousel owl-theme wow animated fadeInLeft">
                     <div class="item">
                         <img
@@ -583,14 +622,14 @@
         <!-- Site Case Study -->
         <div id="case-study" class="site__case-study section-bg">
             <h2 class="wow animated fadeInUp">Case Study</h2>
-            <div class="mx-auto wow animated fadeInUp">
-                <div class="row container btns mx-auto">
+            <div class="mx-auto">
+                <div class="row container btns mx-auto wow animated fadeInUp">
                     <button data-filter="*">All Works</button>
                     <button data-filter=".website">Websites (10)</button>
                     <button data-filter=".game">Games (5)</button>
                     <button data-filter=".app">Applications (8)</button>
                 </div>
-                <div class="row items mx-auto">
+                <div class="row items mx-auto wow animated fadeInLeft">
                     <div class="col-6 col-sm-3 item website">
                         <div>
                             <img
@@ -800,15 +839,16 @@
         <div id="contact" class="site__form container section-no-bg">
             <div class="row">
                 <div class="col-sm-6 wow animated fadeInLeft">
-                        <div class="row title">
-                                <div class="col-sm-1">
-                                    <img
-                                        class="cicle-icon"
-                                        src="./images/8-icon-circle.png"
-                                    />
-                                </div>
-                                <h2 class="col-sm-5">Contact Us</h2>
-                            </div>
+                    <div class="title">
+                      
+                        <img
+                            class="cicle-icon"
+                            src="./images/8-icon-circle.png"
+                        />
+                       
+                    
+                    <div>Contact</div>
+                </div>
                     <div class="row justify-content-between">
                         <div class="col-sm-5 form-group">
                             <label>Your Name</label>
@@ -1072,21 +1112,6 @@
                 </div>
             </div>
         </div>
-                       
          <!-- End Site Footer -->
-
-        <!-- JavaScript Libraries -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.1/jquery-migrate.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-        <!-- Main JavaScript Files -->
-        <script src="./js/script.js"></script>
     </body>
 </html>
