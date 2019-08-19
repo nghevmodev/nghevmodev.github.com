@@ -322,9 +322,7 @@
 }
 
 .site__technologies .tech-item div {
-	border: 0.5px solid rgba(255, 255, 255, 0.25);
-	border-radius: 2rem;
-	padding: 1rem;
+	cursor: pointer;
 }
 
 @media only screen and (min-width: 576px) {
@@ -333,8 +331,8 @@
 	}
 }
 
-.site__technologies .tech-item div:hover {
-	background-color: #ff73006c;
+.site__technologies .tech-item div:hover h3 {
+	color: #ff7200;
 }
 /*========= End Site Technologies =========*/
 
