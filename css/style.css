@@ -11,7 +11,7 @@
 	padding: 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 992px) {
 	.site__header {
 		padding: 0;
 	}
@@ -75,14 +75,20 @@
 	padding: 0;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 992px) {
 	.site__hero-img .carousel-caption > .row {
 		margin-top: -100px;
 	}
 }
 
 .site__hero-img .carousel-item img {
-	max-height: 800px;
+	max-height: 600px;
+}
+
+@media only screen and (min-width: 992px) {
+	.site__hero-img .carousel-item img {
+		max-height: 800px;
+	}
 }
 
 @media only screen and (min-width: 1920px) {
@@ -100,15 +106,21 @@
 .site__hero-img .slogan p {
 	font-family: 'Montserrat', sans-serif;
 	text-align: left;
-	font-size: 3rem;
+	font-size: 2rem;
 	font-weight: 600;
 	margin-bottom: 0;
 }
 
+@media only screen and (min-width: 992px) {
+	.site__hero-img .slogan p {
+		font-size: 3rem;
+	}
+}
+
 .site__hero-img .slogan p:last-child {
-	margin-top: 1.5rem;
-	font-size: 2rem;
-	padding: 1rem;
+	font-size: 1rem;
+	padding: 0.5rem;
+	margin-top: 0.5rem;
 	border-radius: 0.25rem;
 	background: #ff8002; /* Old browsers */
 	background: -moz-linear-gradient(45deg, #ff8002 0%, #ff4001 100%); /* FF3.6-15 */
@@ -125,14 +137,11 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8002', endColorstr='#ff4001',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
-@media only screen and (max-width: 600px) {
-	.site__hero-img .slogan p,
+@media only screen and (min-width: 992px) {
 	.site__hero-img .slogan p:last-child {
-		font-size: 1rem;
-	}
-	.site__hero-img .slogan p:last-child {
-		padding: 0.5rem;
-		margin-top: 0.5rem;
+		margin-top: 1.5rem;
+		font-size: 1.5rem;
+		padding: 1rem;
 	}
 }
 /*========= End Site Hero Img =========*/
@@ -154,13 +163,19 @@
 	text-align: center;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
 	.site__services > .row {
 		margin-top: -8rem;
 		-webkit-box-shadow: 1px 4px 19px 0px rgba(50, 50, 50, 0.1);
 		-moz-box-shadow: 1px 4px 19px 0px rgba(50, 50, 50, 0.1);
 		box-shadow: 1px 4px 19px 0px rgba(50, 50, 50, 0.1);
 		border-radius: 2.5rem;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.site__services > .row {
+		width: 90%;
 	}
 }
 
@@ -181,6 +196,7 @@
 	font-size: 0.8rem;
 	color: rgba(65, 65, 65, 0.75);
 	margin-bottom: 0;
+	text-align: left;
 }
 
 .site__services .item {
@@ -191,12 +207,12 @@
 }
 
 .site__services .item > div:first-child {
-	height: 5rem;
+	height: 4rem;
 }
 
 @media only screen and (min-width: 768px) {
 	.site__services .item > div:first-child {
-		height: 4rem;
+		height: 5rem;
 	}
 }
 
@@ -208,7 +224,7 @@
 	padding-bottom: 1rem;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 768px) {
 	.site__services .circle {
 		padding-top: 2rem;
 		padding-bottom: 3rem;
@@ -242,7 +258,7 @@
 	margin-bottom: 3rem;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 992px) {
 	.section-no-bg {
 		margin-top: 6rem;
 		margin-bottom: 6rem;
@@ -250,13 +266,14 @@
 }
 
 .site__about-us > .row > div:nth-child(2) {
-	padding-left: 4rem;
-	padding-right: 4rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 992px) {
 	.site__about-us > .row > div:nth-child(2) {
-		padding-left: 5rem;
+		padding-left: 4rem;
+		padding-right: 4rem;
 	}
 }
 
@@ -294,7 +311,7 @@
 
 @media only screen and (min-width: 576px) {
 	.section-bg {
-		padding: 6rem 4rem;
+		padding: 5rem 3rem;
 	}
 }
 
@@ -421,6 +438,10 @@
 	border: 1px solid rgba(153, 153, 153, 0.39);
 }
 
+.site__partners .testimonials button.next {
+	margin-right: 0;
+}
+
 @media only screen and (min-width: 576px) {
 	.site__partners .testimonials button.prev,
 	.site__partners .testimonials button.next {
@@ -471,6 +492,13 @@
 @media only screen and (min-width: 576px) {
 	.site__partners .quote-icon {
 		margin-bottom: 1rem;
+		max-height: 1.5rem;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.site__partners .quote-icon {
+		margin-bottom: 1rem;
 		max-height: 2rem;
 	}
 }
@@ -485,7 +513,7 @@
 	padding: 2rem 1rem;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 992px) {
 	.site__case-study.section-bg {
 		padding: 4rem 3rem 10rem 3rem;
 	}
@@ -528,7 +556,7 @@
 	margin-top: 1rem;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 992px) {
 	.site__case-study .item {
 		padding: 0 3rem;
 	}
@@ -559,19 +587,13 @@
 	font-size: 0.7rem;
 }
 
-@media only screen and (min-width: 576px) {
-	.site__case-study .item > div:nth-child(2) p:first-child {
-		font-size: 0.8rem;
-	}
-}
-
 .site__case-study .item > div:nth-child(2) p:nth-child(2) {
 	font-size: 0.8rem;
 	font-weight: 500;
 	margin-bottom: 0;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 992px) {
 	.site__case-study .item > div:nth-child(2) p:nth-child(2) {
 		font-size: 1.2rem;
 	}
@@ -583,7 +605,7 @@
 	margin-bottom: 1rem;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 992px) {
 	.site__stats {
 		margin-bottom: 4rem;
 	}
@@ -594,7 +616,7 @@
 	padding: 2rem 0;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 992px) {
 	.site__stats .row {
 		margin-top: -5.5rem;
 		-webkit-box-shadow: 1px 4px 19px 0px rgba(50, 50, 50, 0.1);
@@ -647,6 +669,14 @@
 .site__form button:hover {
 	background-color: #975722;
 }
+
+.site__form .row {
+	margin-top: -1rem;
+}
+
+.site__form .row > div {
+	margin-top: 1rem;
+}
 /*========= End Site Form =========*/
 
 /*========= Site News =========*/
@@ -672,19 +702,25 @@
 }
 
 .site__news > div:nth-child(2) {
-	margin-top: -1rem;
+	margin-top: -1.5rem;
 	z-index: 50;
 }
 
 .site__news .item {
-	margin-top: 1rem;
+	margin-top: 1.5rem;
 }
 
 .site__news .item > div:nth-child(2) {
 	border: 1px solid #6d6d6d27;
 	border-top: none;
 	background-color: white;
-	padding: 1.5rem;
+	padding: 1rem;
+}
+
+@media only screen and (min-width: 992px) {
+	.site__news .item > div:nth-child(2) {
+		padding: 1.5rem;
+	}
 }
 
 .site__news .info {
@@ -728,21 +764,25 @@
 }
 
 .site__news ~ .after-bg {
-	height: 44rem;
+	height: 38rem;
 	background-color: #f3fbfe;
 }
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 768px) {
+	.site__news ~ .after-bg {
+		height: 46rem;
+	}
+}
+
+@media only screen and (min-width: 992px) {
 	.site__news ~ .after-bg {
 		height: 18rem;
-		background-color: #f3fbfe;
 	}
 }
 
 @media only screen and (min-width: 1920px) {
 	.site__news ~ .after-bg {
 		height: 20rem;
-		background-color: #f3fbfe;
 	}
 }
 /*========= End Site News =========*/
