@@ -69,7 +69,20 @@ $(document).ready(function() {
 	$('.site__stats .content p:nth-child(2)').counterUp({
 		delay: 10,
 		time: 1000
-	}); // End Init Counter Up
+    }); // End Init Counter Up
+    
+    // Scroll Top
+    $(window).on('scroll', function() {
+        if ($('body').scrollTop() > 50 || $(document.documentElement).scrollTop() > 50) {
+            $('.site__footer .to-top').css('display', 'block');
+          } else {
+            $('.site__footer .to-top').css('display', 'none');
+          }
+          $('.site__footer .to-top').click(function() {
+            $('body, html').stop(true, false).animate({scrollTop: 0}, 1500);
+          });
+	});
+    // End Scroll Top
 });
 
 $(window).load(function() {
