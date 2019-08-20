@@ -75,8 +75,10 @@
 	padding: 0;
 }
 
-.site__hero-img .carousel-caption > .row {
-	margin-top: -100px;
+@media only screen and (min-width: 576px) {
+	.site__hero-img .carousel-caption > .row {
+		margin-top: -100px;
+	}
 }
 
 .site__hero-img .carousel-item img {
@@ -287,7 +289,7 @@
 
 /*========= Site Technologies =========*/
 .section-bg {
-	padding: 2rem 0;
+	padding: 2rem 0 0 0;
 }
 
 @media only screen and (min-width: 576px) {
@@ -408,17 +410,20 @@
 	margin-left: 0;
 }
 
-.site__partners .testimonials button {
+.site__partners .testimonials button.prev,
+.site__partners .testimonials button.next {
 	padding: 0.8rem 1rem;
 	margin-right: 1rem;
 	margin-top: 1rem;
 	background-color: #fff;
 	border-radius: 0.5rem;
 	cursor: pointer;
+	border: 1px solid rgba(153, 153, 153, 0.39);
 }
 
 @media only screen and (min-width: 576px) {
-	.site__partners .testimonials button {
+	.site__partners .testimonials button.prev,
+	.site__partners .testimonials button.next {
 		padding: 1rem 1.5rem;
 	}
 }
@@ -459,8 +464,15 @@
 }
 
 .site__partners .quote-icon {
-	margin-bottom: 1rem;
-	max-height: 2rem;
+	margin: 0.5rem 0;
+	max-height: 1rem;
+}
+
+@media only screen and (min-width: 576px) {
+	.site__partners .quote-icon {
+		margin-bottom: 1rem;
+		max-height: 2rem;
+	}
 }
 
 .site__partners .owl-dots {
@@ -716,7 +728,7 @@
 }
 
 .site__news ~ .after-bg {
-	height: 40rem;
+	height: 44rem;
 	background-color: #f3fbfe;
 }
 
